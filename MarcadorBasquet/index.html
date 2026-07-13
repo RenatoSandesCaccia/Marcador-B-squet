@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marcador Básquet TTNB</title>
+  <link rel="stylesheet" href="basquet.css" />
+</head>
+<body>
+  <div class="scoreboard">
+    <div class="timer-section">
+      <div id="timer-label" class="timer-label">Tiempo</div>
+      <div id="main-timer" class="timer-display">10:00</div>
+      <div id="sub-label" class="sub-label"></div>
+    </div>
+
+    <div class="bottom-section">
+      <div class="team team-local">
+        <div class="team-name">Local</div>
+        <div id="local-score" class="score">0</div>
+        <div class="timeout-row">
+          <span class="timeout-label">Tiempo muerto</span>
+          <span class="arrow arrow--right" aria-hidden="true"></span>
+          <span id="local-timeout-circle" class="timeout-circle"></span>
+        </div>
+      </div>
+
+      <div class="center-info">
+        <div class="quarter-label">Periodo</div>
+        <div id="quarter-number" class="quarter-number">1</div>
+      </div>
+
+      <div class="team team-visitor">
+        <div class="team-name">Visita</div>
+        <div id="visitor-score" class="score">0</div>
+        <div class="timeout-row">
+          <span class="timeout-label">Tiempo muerto</span>
+          <span id="visitor-timeout-circle" class="timeout-circle"></span>
+          <span class="arrow arrow--left" aria-hidden="true"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="basquet.js"></script>
+</body>
+</html>
